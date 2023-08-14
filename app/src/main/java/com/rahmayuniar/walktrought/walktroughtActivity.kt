@@ -17,7 +17,10 @@ class walktroughtActivity : AppCompatActivity() {
 
         viewPager = findViewById(R.id.viewPager)
 
+        // Untuk mengatur urutan tampilan walktrough
         val fragments = listOf(
+            walktrough1(),
+            walktrough2(),
             walktrought(),
 
         )

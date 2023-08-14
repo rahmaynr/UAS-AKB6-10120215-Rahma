@@ -18,10 +18,10 @@
 
             <ImageView
                 android:id="@+id/imageQuran"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_centerVertical="true"
-                android:src="@drawable/quran" />
+                android:src="@drawable/baseline_menu_24" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -30,7 +30,7 @@
                 android:layout_marginStart="20dp"
                 android:layout_toEndOf="@id/imageQuran"
                 android:text="MyPraySchedule"
-                android:textColor="@color/black"
+                android:textColor="@color/ungu"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
