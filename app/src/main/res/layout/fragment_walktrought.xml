@@ -5,30 +5,54 @@
     android:layout_height="match_parent"
     tools:context="com.rahmayuniar.walktrought.walktrought">
 
-    <!-- TODO: Update blank fragment layout -->
-
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/halooooo"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_masuk"
+        android:layout_marginTop="90dp"
+        android:gravity="center"
+        android:text="Schedule Pray and Qur'an App"
+        android:textColor="@color/ungu"
+        android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Don't leave prayer\nand Learn quran and recite\nonce every day"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="316dp"
+        android:layout_height="449dp"
+        android:layout_marginTop="-50dp"
+        android:src="@drawable/alqurann"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_masuk"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/teal_700"
-        android:text="@string/masuk"
+        android:layout_width="121dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/button"
+        android:text="Get Started"
         android:textColor="@color/white"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
