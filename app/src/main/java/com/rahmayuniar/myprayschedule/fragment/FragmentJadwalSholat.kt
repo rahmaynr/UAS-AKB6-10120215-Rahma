@@ -105,6 +105,7 @@ class FragmentJadwalSholat : BottomSheetDialogFragment() {
         return rootView
     }
 
+    //Api jadwal sholat
     private fun getDataJadwal(id: Int?) {
         try {
             progressDialog.show()

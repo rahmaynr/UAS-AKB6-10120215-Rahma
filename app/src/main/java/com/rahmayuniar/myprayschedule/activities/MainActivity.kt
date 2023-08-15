@@ -7,10 +7,16 @@ import android.content.pm.PackageManager
 import android.location.Geocoder
 import android.os.Bundle
 import android.text.format.DateFormat
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+import androidx.core.content.ContentProviderCompat.requireContext
 import com.rahmayuniar.myprayschedule.R
 import com.rahmayuniar.myprayschedule.fragment.FragmentJadwalSholat.Companion.newInstance
+import com.rahmayuniar.surah.Surah
 import im.delight.android.location.SimpleLocation
 import kotlinx.android.synthetic.main.activity_main.*
 import java.io.IOException
@@ -37,6 +43,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+
+   //Fungsi untuk menjalankan jadwal sholat
     private fun setInitLayout() {
         progressDialog = ProgressDialog(this)
         progressDialog.setTitle("Mohon Tunggu")
@@ -55,8 +63,19 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-
+        //Direct ke surah
+        layoutsurah.setOnClickListener {
+            startActivity(
+                Intent(
+                    this@MainActivity,
+                    Surah::class.java
+                )
+            )
+        }
     }
+
+
+
 
     private fun setLocation() {
         simpleLocation = SimpleLocation(this)
