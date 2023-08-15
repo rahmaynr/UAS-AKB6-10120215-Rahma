@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/colorPrimary"
     android:fitsSystemWindows="true"
     android:orientation="vertical">
 
@@ -38,7 +38,7 @@
             <ImageView
                 android:layout_width="354dp"
                 android:layout_height="259dp"
-                android:layout_marginTop="150dp"
+                android:layout_marginTop="130dp"
                 android:src="@drawable/background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.49"
